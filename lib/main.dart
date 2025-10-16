@@ -54,7 +54,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -104,7 +103,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'Welcome to my sandwich shop!',
-              style: TextStyle(fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 24,
+                color: Colors.blue,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
