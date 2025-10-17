@@ -14,15 +14,27 @@ class App extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Sandwich Counter')),
         body: Center(
-          child: Center(
-            child: Container(
-              margin: const EdgeInsets.all(10.0),
-              color: const Color.fromARGB(255, 16, 96, 210),
-              width: 400.0,
-              height: 100.0,
-              child: const Center(
-                child: OrderItemDisplay(5, 'Footlong')),
-            ),
+          child: Row(
+            children: [
+              Container(
+                color: const Color.fromARGB(255, 16, 96, 210),
+                width: 300.0,
+                height: 100.0,
+                child: const Center(child: OrderItemDisplay(5, 'Footlong(es)')),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 16, 96, 210),
+                width: 300.0,
+                height: 100.0,
+                child: const Center(child: OrderItemDisplay(3, 'BLT sandwich(es)')),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 16, 96, 210),
+                width: 300.0,
+                height: 100.0,
+                child: const Center(child: OrderItemDisplay(6, 'Veggie sandwich(es)')),
+              ),
+            ],
           ),
         ),
       ),
