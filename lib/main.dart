@@ -13,29 +13,29 @@ class App extends StatelessWidget {
       title: 'Sandwich Shop App',
       home: Scaffold(
         appBar: AppBar(title: const Text('Sandwich Counter')),
-        body: Center(
-          child: Row(
-            children: [
-              Container(
-                color: const Color.fromARGB(255, 16, 96, 210),
-                width: 300.0,
-                height: 100.0,
-                child: const Center(child: OrderItemDisplay(5, 'Footlong(es)')),
-              ),
-              Container(
-                color: const Color.fromARGB(255, 16, 96, 210),
-                width: 300.0,
-                height: 100.0,
-                child: const Center(child: OrderItemDisplay(3, 'BLT sandwich(es)')),
-              ),
-              Container(
-                color: const Color.fromARGB(255, 16, 96, 210),
-                width: 300.0,
-                height: 100.0,
-                child: const Center(child: OrderItemDisplay(6, 'Veggie sandwich(es)')),
-              ),
-            ],
-          ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              color: const Color.fromARGB(255, 16, 96, 210),
+              width: 300.0,
+              height: 100.0,
+              child: const Center(child: OrderItemDisplay(5, 'Footlong(es)')),
+            ),
+            Container(
+              color: const Color.fromARGB(255, 16, 96, 210),
+              width: 300.0,
+              height: 100.0,
+              child: const Center(child: OrderItemDisplay(3, 'BLT sandwich(es)')),
+            ),
+            Container(
+              color: const Color.fromARGB(255, 16, 96, 210),
+              width: 300.0,
+              height: 100.0,
+              child: const Center(child: OrderItemDisplay(6, 'Veggie sandwich(es)')),
+            ),
+          ],
         ),
       ),
     );
